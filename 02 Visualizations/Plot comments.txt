@@ -1,0 +1,16 @@
+SOME COMMENTS ON PLOTS
+
+Plot 1 and 2: 
+- High percentage of male on the ship is in age range 20 to 40.
+- For males, most fares are below 100. While for females, the percentage of 100+ fares are higher. However, the most expensive fares (at 500+) belong to males.
+- Females are generally below 60 years of age, in contrast to males (the eldest male is at 80).
+
+Plot 3:
+- High percentage of females survived, the opposite for males.
+
+Plot 4:
+- For PCLASS 1 and 2, most females survived, which is different from PCLASS 3.
+
+Plot 5:
+- All children (less than 10 years of age) in PCLASS 1 and 2 survived except one. On the contrary, only about half of children in PCLASS 3 survived.
+

@@ -27,5 +27,7 @@ If did not create the repo, clone the repo in SourceTree software.
 ### 06. Interesting Data
 
 ### 07. Other plots
+This line is a test.
+This line is also a test behind the first test line.
 
 

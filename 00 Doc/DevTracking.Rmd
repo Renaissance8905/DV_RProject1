@@ -1,26 +1,26 @@
 ---
-title: "DevTracking"
+title: "DV_RProject1: Titanic"
 output: html_document
 ---
 
-This is an R Markdown document. Markdown is a simple formatting syntax for authoring HTML, PDF, and MS Word documents. For more details on using R Markdown see <http://rmarkdown.rstudio.com>.
+### 00. Create a github repository
 
-When you click the **Knit** button a document will be generated that includes both content as well as the output of any embedded R code chunks within the document. You can embed an R code chunk like this:
+### 01. Clone Repo
 
-```{r}
-summary(cars)
-```
+### 02. Create RStudio Project
 
-You can also embed plots, for example:
+### 03. Build Dataframe
 
-```{r, echo=FALSE}
-plot(cars)
-```
+### 04. Display Subset of Dataframe
 
-Note that the `echo = FALSE` parameter was added to the code chunk to prevent printing of the R code that generated the plot.
+#### Subset of Titanic Dataframe:
+
+### 05. Display Summary of Dataframe
+
+#### Summary of Titanic Dataframe:
+
+### 06. Interesting Data
+
+### 07. Other plots
 
 
-
-```{r}
-source("../01 Data/DataframeMain.R", echo = TRUE)
-```

@@ -4,10 +4,15 @@ output: html_document
 ---
 
 ### 00. Create a github repository
+Go to SourceTree software. Create new git repository in DataVisualization folder (on same level as DrCannata folder).
+![](./creategit00.png)
 
-### 01. Clone Repo
+### 00.5 Clone Repo
+If did not create the repo, clone the repo in SourceTree software.
 
-### 02. Create RStudio Project
+### 01. Create RStudio Project
+
+### 02. Setup RStudio 
 
 ### 03. Build Dataframe
 

@@ -3,20 +3,23 @@ title: "DV_RProject1: Titanic"
 output: html_document
 ---
 
-### 00. Create a github repository
+### 00. Create/Clone a github repository
 Go to SourceTree software. Create new git repository in DataVisualization folder (on same level as DrCannata folder).
 ![](./creategit00.png)
 
-### 00.5 Clone Repo
 If did not create the repo, clone the repo in SourceTree software.
+![](./clonegit00.png)
 
 ### 01. Create RStudio Project
+Create an RStudio project in the project folder.
+![](createproject01.png)
+
+
 
 ### 02. Setup RStudio 
 
 ### 03. Build Dataframe
 
-### Hello
 ### 04. Display Subset of Dataframe
 
 #### Subset of Titanic Dataframe:
@@ -28,8 +31,5 @@ If did not create the repo, clone the repo in SourceTree software.
 ### 06. Interesting Data
 
 ### 07. Other plots
-This line is a test.
-This line is also a test behind the first test line.
 
-### efdfdsf
 

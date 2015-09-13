@@ -28,6 +28,39 @@ If did not create the repo, clone the repo in SourceTree software.
 ### 06. Interesting Data
 
 ### 07. Other plots
+```{r}
+# source("../02 Visualizations/Titanic_plot1.R"", echo = TRUE)
+```
 
-### efdfdsf
+```{r}
+# source("../02 Visualizations/Titanic_plot2.R"", echo = TRUE)
+```
 
+Plot 1 and 2: 
+- High percentage of male on the ship is in age range 20 to 40.
+- For males, most fares are below 100. While for females, the percentage of 100+ fares are higher. However, the most expensive fares (at 500+) belong to males.
+- Females are generally below 60 years of age, in contrast to males (the eldest male is at 80).
+
+
+```{r}
+# source("../02 Visualizations/Titanic_plot3.R"", echo = TRUE)
+```
+
+Plot 3:
+- High percentage of females survived, the opposite for males.
+
+
+```{r}
+# source("../02 Visualizations/Titanic_plot4.R"", echo = TRUE)
+```
+
+Plot 4:
+- For PCLASS 1 and 2, most females survived, which is different from PCLASS 3.
+
+
+```{r}
+# source("../02 Visualizations/Titanic_plot5.R"", echo = TRUE)
+```
+
+Plot 5:
+- All children (less than 10 years of age) in PCLASS 1 and 2 survived except one. On the contrary, only about half of children in PCLASS 3 survived.

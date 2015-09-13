@@ -11,7 +11,7 @@ ggplot() +
   labs(title='Titanic') +
   labs(x="SURVIVED", y=paste("FARE")) +
   layer(data=df, 
-        mapping=aes(x=SURVIVED, y=as.numeric(as.character(FARE)), color=SEX), 
+        mapping=aes(x=SEX, y=as.numeric(as.character(FARE)), color=SEX), 
         stat="identity", 
         stat_params=list(), 
         geom="point",

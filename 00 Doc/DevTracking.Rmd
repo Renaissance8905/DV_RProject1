@@ -32,7 +32,7 @@ Create an RStudio project in the project folder.
 
 ### 07. Other plots
 ```{r}
-source("../02 Visualizations/Titanic_plot1.R", echo = TRUE)
+# source("../02 Visualizations/Titanic_plot1.R", echo = TRUE)
 ```
 
 <<<<<<< HEAD

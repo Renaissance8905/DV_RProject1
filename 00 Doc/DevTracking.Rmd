@@ -2,6 +2,7 @@
 title: "DV_RProject1: Titanic"
 output: html_document
 ---
+![](./Graphics/I'mflyingscene.png)  
 
 ## 00. Create/Clone a github repository
 Go to SourceTree software. Create new git repository in DataVisualization folder (on same level as DrCannata folder).
@@ -25,13 +26,18 @@ Create an RStudio project in the project folder.
 1. Create sqldeveloper worksheet from SQL titanic data.  
 ![](./Graphics/sqldeveloper00.png)  
 
+2. Extract data from sqldeveloper to dataframe "df" using SQL:
+
 ```{r}
-df <- data.frame(fromJSON(getURL(URLencode('129.152.144.84:5001/rest/native/?query="select * from titanic"'),httpheader=c(DB='jdbc:oracle:thin:@129.152.144.84:1521/PDBF15DV.usuniversi01134.oraclecloud.internal', USER='cs329e_uteid', PASS='orcl_uteid', MODE='native_mode', MODEL='model', returnDimensions = 'False', returnFor = 'JSON'), verbose = TRUE), ))
+df <- data.frame(fromJSON(getURL(URLencode('129.152.144.84:5001/rest/native/?query="select * from titanic"'),httpheader=c(DB='jdbc:oracle:thin:@129.152.144.84:1521/PDBF15DV.usuniversi01134.oraclecloud.internal', USER='cs329e_jht585', PASS='orcl_jht585', MODE='native_mode', MODEL='model', returnDimensions = 'False', returnFor = 'JSON'), verbose = TRUE), ))
 ```  
 
 ## 04. Display Subset of Dataframe
 
 ### Subset of Titanic Dataframe:
+```{r}
+summary(df)
+```  
 
 ## 05. Display Summary of Dataframe
 

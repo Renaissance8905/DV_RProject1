@@ -2,9 +2,6 @@ require("ggplot2")
 require("jsonlite")
 df <- data.frame(fromJSON(getURL(URLencode('129.152.144.84:5001/rest/native/?query="select age, sex, pclass, parch, survived from titanic where not (age is null or sex is null or pclass is null or parch is null or survived is null) and age < 50 and age > 15"'),httpheader=c(DB='jdbc:oracle:thin:@129.152.144.84:1521/PDBF15DV.usuniversi01134.oraclecloud.internal', USER='cs329e_cjs2599', PASS='orcl_cjs2599', MODE='native_mode', MODEL='model', returnDimensions = 'False', returnFor = 'JSON'), verbose = TRUE), ))
 
-summary(df)
-head(df)
-
 ggplot() +
   coord_cartesian() +
   scale_x_discrete() +

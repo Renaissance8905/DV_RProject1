@@ -40,44 +40,55 @@ df <- data.frame(fromJSON(getURL(URLencode('129.152.144.84:5001/rest/native/?que
 ## 06. Interesting Data
 
 ## 07. Other plots
-```{r}
-# source("../02 Visualizations/Titanic_plot1.R", echo = TRUE)
+```{r, echo=FALSE, warning=FALSE}
+source("../02 Visualizations/Titanic_plot1.R")
+plot1
 ```
 
-<<<<<<< HEAD
-=======
-```{r}
-# source("../02 Visualizations/Titanic_plot2.R", echo = TRUE)
+```{r, echo=FALSE, warning=FALSE}
+source("../02 Visualizations/Titanic_plot2.R")
+plot2
 ```
->>>>>>> 796afb6c36c65171ce76672055b48f31e08c60d3
 
-Plot 1 and 2: 
+Comment on Plot 1 and 2:
+
 - High percentage of male on the ship is in age range 20 to 40.
+
 - For males, most fares are below 100. While for females, the percentage of 100+ fares are higher. However, the most expensive fares (at 500+) belong to males.
+
 - Females are generally below 60 years of age, in contrast to males (the eldest male is at 80).
 
 
-```{r}
-# source("../02 Visualizations/Titanic_plot3.R", echo = TRUE)
+
+```{r, echo=FALSE, warning=FALSE}
+source("../02 Visualizations/Titanic_plot3.R")
+plot3
 ```
 
-Plot 3:
+Comment on Plot 3:
+
 - High percentage of females survived, the opposite for males.
 
 
-```{r}
-# source("../02 Visualizations/Titanic_plot4.R", echo = TRUE)
+
+```{r, echo=FALSE, warning=FALSE}
+source("../02 Visualizations/Titanic_plot4.R")
+plot4
 ```
 
-Plot 4:
+Comment on Plot 4:
+
 - For PCLASS 1 and 2, most females survived, which is different from PCLASS 3.
 
 
-```{r}
-# source("../02 Visualizations/Titanic_plot5.R", echo = TRUE)
+
+```{r, echo=FALSE, warning=FALSE}
+source("../02 Visualizations/Titanic_plot5.R")
+plot5
 ```
 
-Plot 5:
+Comment on Plot 5:
+
 - All children (less than 10 years of age) in PCLASS 1 and 2 survived except one. On the contrary, only about half of children in PCLASS 3 survived.
 
 

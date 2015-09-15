@@ -3,34 +3,43 @@ title: "DV_RProject1: Titanic"
 output: html_document
 ---
 
-### 00. Create/Clone a github repository
+## 00. Create/Clone a github repository
 Go to SourceTree software. Create new git repository in DataVisualization folder (on same level as DrCannata folder).
 ![](./Graphics/creategit00.png)
 
 If did not create the repo, clone the repo in SourceTree software.
 ![](./Graphics/clonegit00.png)
 
-### 01. Create RStudio Project
-Create an RStudio project in the project folder.
+## 01. Create RStudio Project
+Create an RStudio project in the project folder.   
 ![](./Graphics/createproject01.png)
 
+## 02. Setup RStudio 
+ Create three folders in RStudio Project:  
+   **00 Doc**: where .Rmd lives  
+   **01 Data**: where data will be stored  
+   **02 Visualizations**: where data is explored in ggplot  
+![](./Graphics/createproject02.png)
 
+## 03. Build Dataframe
+1. Create sqldeveloper worksheet from SQL titanic data.  
+![](./Graphics/sqldeveloper00.png)  
 
-### 02. Setup RStudio 
+```{r}
+df <- data.frame(fromJSON(getURL(URLencode('129.152.144.84:5001/rest/native/?query="select * from titanic"'),httpheader=c(DB='jdbc:oracle:thin:@129.152.144.84:1521/PDBF15DV.usuniversi01134.oraclecloud.internal', USER='cs329e_uteid', PASS='orcl_uteid', MODE='native_mode', MODEL='model', returnDimensions = 'False', returnFor = 'JSON'), verbose = TRUE), ))
+```  
 
-### 03. Build Dataframe
+## 04. Display Subset of Dataframe
 
-### 04. Display Subset of Dataframe
+### Subset of Titanic Dataframe:
 
-#### Subset of Titanic Dataframe:
+## 05. Display Summary of Dataframe
 
-### 05. Display Summary of Dataframe
+### Summary of Titanic Dataframe:
 
-#### Summary of Titanic Dataframe:
+## 06. Interesting Data
 
-### 06. Interesting Data
-
-### 07. Other plots
+## 07. Other plots
 ```{r}
 # source("../02 Visualizations/Titanic_plot1.R", echo = TRUE)
 ```

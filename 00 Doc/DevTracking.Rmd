@@ -32,16 +32,16 @@ Create an RStudio project in the project folder.
 df <- data.frame(fromJSON(getURL(URLencode('129.152.144.84:5001/rest/native/?query="select * from titanic"'),httpheader=c(DB='jdbc:oracle:thin:@129.152.144.84:1521/PDBF15DV.usuniversi01134.oraclecloud.internal', USER='cs329e_jht585', PASS='orcl_jht585', MODE='native_mode', MODEL='model', returnDimensions = 'False', returnFor = 'JSON'), verbose = TRUE), ))
 ```  
 
-## 04. Display Subset of Dataframe
+## 04. Display Summary of Dataframe
 
-### Subset of Titanic Dataframe:
+### Summary of Titanic Dataframe:
 ```{r}
 summary(df)
 ```  
 
-## 05. Display Summary of Dataframe
+## 05. Display Subset of Dataframe
 
-### Summary of Titanic Dataframe:
+### Subset of Titanic Dataframe:
 
 ## 06. Interesting Data
 

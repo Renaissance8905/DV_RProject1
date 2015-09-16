@@ -50,7 +50,7 @@ head(subset(df, PCLASS == 1 & SEX == "female" & as.numeric(as.character(AGE)) > 
 
 ## 06. Interesting Data
 
-# Comparing Survival Rate Across Family Size
+### Comparing Survival Rate Across Family Size:
 
 ```{r, fig.width=10, fig.height=20}
 source("../02 Visualizations/Titanic_Plot6.R", echo=TRUE)

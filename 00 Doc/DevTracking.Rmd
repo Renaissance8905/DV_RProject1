@@ -45,6 +45,30 @@ summary(df)
 
 ## 06. Interesting Data
 
+# Comparing Survival Rate Across Family Size
+
+```{r, fig.width=10, fig.height=20}
+source("../02 Visualizations/Titanic_Plot6.R", echo=FALSE)
+```
+
+```{r}
+## SQL QUERY: select age, sex, pclass, parch, survived from titanic where not (age is null or sex is null or pclass is null or parch is null or survived is null) and age < 50 and age > 15
+```
+
+- Shows how survival rates shifted for those with larger families
+
+- PARCH is a measure of the number of parents AND children a passenger had; data was subsetted to ages 15-50 to eliminate those passengers that could not have feasibly had both a parent and child aboard
+
+- Initially obvious is that passengers were overall unlikely to have been traveling with family
+
+- Having a larger family shows a fairly strong positive correlation with the survival rates of second-class women and first-class men, but no one else.
+
+- First- and third-class women survived at steady rates regardless of family size
+
+- The largest negative correlation was among lower-class men: of all second- and third-class men within the selected age range who survived, only one had a parent or child with him.
+
+
+
 ## 07. Other plots
 
 ### Plot 1:
@@ -208,27 +232,4 @@ plot5
 Comment on Plot 5:
 
 - All children (less than 10 years of age) in PCLASS 1 and 2 survived except one. On the contrary, only about half of children in PCLASS 3 survived.
-
-
-## Plot 6: Comparing Survival Rate Across Family Size
-
-```{r, fig.width=10, fig.height=20}
-source("../02 Visualizations/Titanic_Plot6.R", echo=FALSE)
-```
-
-```{r}
-## SQL QUERY: select age, sex, pclass, parch, survived from titanic where not (age is null or sex is null or pclass is null or parch is null or survived is null) and age < 50 and age > 15
-```
-
-- Shows how survival rates shifted for those with larger families
-
-- PARCH is a measure of the number of parents AND children a passenger had; data was subsetted to ages 15-50 to eliminate those passengers that could not have feasibly had both a parent and child aboard
-
-- Initially obvious is that passengers were overall unlikely to have been traveling with family
-
-- Having a larger family shows a fairly strong positive correlation with the survival rates of second-class women and first-class men, but no one else.
-
-- First- and third-class women survived at steady rates regardless of family size
-
-- The largest negative correlation was among lower-class men: of all second- and third-class men within the selected age range who survived, only one had a parent or child with him.
 

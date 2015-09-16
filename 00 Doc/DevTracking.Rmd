@@ -41,7 +41,12 @@ summary(df)
 
 ## 05. Display Subset of Dataframe
 
-### SubsetTitanic Dataframe:
+### Subset of Titanic Dataframe:
+- A subset of girls Jack might be interested in on the Titanic.  
+
+```{r, warning = FALSE}
+head(subset(df, PCLASS == 1 & SEX == "female" & as.numeric(as.character(AGE)) > 18))
+```
 
 ## 06. Interesting Data
 
